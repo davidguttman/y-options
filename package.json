@@ -1,0 +1,38 @@
+{
+  "name": "y-options",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/index.js",
+    "example": "node example/index.js"
+  },
+  "author": "David Guttman <david@guttman.io> (http://davidguttman.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "replay": "^1.12.0",
+    "tape": "^3.0.3"
+  },
+  "dependencies": {
+    "cheerio": "^0.18.0",
+    "moment": "^2.9.0",
+    "request": "^2.51.0"
+  },
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "description": "**Get Options Quotes from Yahoo**",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidguttman/y-options.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davidguttman/y-options/issues"
+  },
+  "homepage": "https://github.com/davidguttman/y-options",
+  "keywords": [
+    "options",
+    "finance",
+    "stocks"
+  ]
+}
