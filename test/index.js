@@ -8,6 +8,8 @@ tape('should get option stats from Yahoo!', function(t) {
   yOptions(opts, function(err, stats) {
     if (err) return console.error(err)
 
+    t.equal(stats.quote, '109.83', 'should have current price')
+
     var calls = stats.calls
     t.equal(calls.length, 194, 'should have calls')
 

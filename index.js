@@ -21,11 +21,19 @@ function parseStats (body) {
   var $html = $(body)
   var $calls = $html.find('#optionsCallsTable table')
   var $puts = $html.find('#optionsPutsTable table')
+  var quote = parseQuote($html)
   var stats = {
+    quote: quote,
     calls: parseTable($calls),
     puts: parseTable($puts)
   }
   return stats
+}
+
+function parseQuote ($html) {
+  var $ticker = $html.find('span.time_rtq_ticker')
+  var text = $ticker.text().replace(/\s/g, '')
+  return text
 }
 
 function parseTable ($table) {
