@@ -33,7 +33,7 @@ function parseStats (body) {
 function parseQuote ($html) {
   var $ticker = $html.find('span.time_rtq_ticker')
   var text = $ticker.text().replace(/\s/g, '')
-  return text
+  return parseFloat(text)
 }
 
 function parseTable ($table) {
@@ -47,7 +47,12 @@ function parseTable ($table) {
     $cells = $(tr).find('td')
     $cells.each(function(iCol, td) {
       var colName = headings[iCol]
-      row[colName] = $(td).text().replace(/\s/g, '')
+      var text = $(td).text().replace(/\s/g, '')
+      if (text.match(/^\D/)) {
+        row[colName] = text
+      } else {
+        row[colName] = parseFloat(text.replace(/%$/, ''))
+      }
     })
 
     rows.push(row)
