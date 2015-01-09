@@ -13,28 +13,29 @@ yOptions(opts, function(err, quotes) {
 
   console.log(quotes)
 
-// { calls:
-//    [ { strike: '27.86',
+// { quote: 110.20
+//   calls:
+//    [ { strike: 27.86,
 //        contractName: 'AAPL150117C00027860',
-//        last: '82.74',
-//        bid: '81.80',
-//        ask: '82.15',
-//        change: '0.00',
-//        percentChange: '0.00%',
-//        volume: '2',
-//        openInterest: '505',
-//        impliedVolatility: '287.50%' },...],
+//        last: 82.74,
+//        bid: 81.80,
+//        ask: 82.15,
+//        change: 0.00,
+//        percentChange: 0.00%,
+//        volume: 2,
+//        openInterest: 505,
+//        impliedVolatility: 287.50% },...],
 //   puts:
-//    [ { strike: '27.86',
+//    [ { strike: 27.86,
 //        contractName: 'AAPL150117P00027860',
-//        last: '0.02',
-//        bid: '0.00',
-//        ask: '0.01',
-//        change: '0.00',
-//        percentChange: '0.00%',
-//        volume: '0',
-//        openInterest: '16591',
-//        impliedVolatility: '262.50%' },...] }
+//        last: 0.02,
+//        bid: 0.00,
+//        ask: 0.01,
+//        change: 0.00,
+//        percentChange: 0.00%,
+//        volume: 0,
+//        openInterest: 16591,
+//        impliedVolatility: 262.50% },...] }
 
 })
 
