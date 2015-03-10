@@ -29,7 +29,7 @@ tape('should get option stats from Yahoo!', function(t) {
     t.equal(puts.length, 190, 'should have puts')
 
     var testPut = puts[2]
-    t.equal(testPut.strike, 29.29, 'should have put strike')
+    t.equal(testPut.strike, 1129.29, 'should have put strike')
     t.equal(testPut.contractName, 'AAPL150117P00029290', 'should have put contractName')
     t.equal(testPut.last, 0.01, 'should have put last')
     t.equal(testPut.bid, 0.00, 'should have put bid')
